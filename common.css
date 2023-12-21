@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-image: url('https://www.jru.edu.in/wp-content/uploads/2023/01/Building-Namkum.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 97vh;
+    margin: 0;
+    background-attachment: fixed;
+}
+button {
+    background-color: #9d0a0e;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #84080c;
+}
