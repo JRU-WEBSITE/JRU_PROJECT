@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Staf assessment</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="common.css" rel="stylesheet">
+    <link href="nav2.css" rel="stylesheet">
+</head>
+<style>
+    input,
+    select,
+    textarea {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+
+    form {
+        background-color: antiquewhite;
+        min-width: 60%;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    .form-fill {
+        max-width: 60%;
+    }
+
+    .form-card {
+        border: solid 1px rgb(83, 82, 82);
+    }
+
+    form h2,
+    h4 {
+        font-weight: 600;
+    }
+
+    @media (max-width:768px) {
+        .form-fill {
+            max-width: 90%;
+        }
+    }
+
+    @media (max-width:450px) {
+
+        form h2,
+        h4 {
+            font-size: larger;
+            font-weight: 600;
+        }
+
+        label.form-label {
+            font-size: smaller;
+        }
+
+        input {
+            font-size: x-small;
+        }
+    }
+</style>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://www.jru.edu.in/wp-content/themes/jrunew/images/jru-logo-ranchi.png" alt="JRU Logo"
+                    class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#teaching-section">Teaching</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#development-section">Professional Development</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#research-section">Research</a></li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class='bx bxs-log-in-circle' data-bs-toggle="tooltip"
+                                data-bs-placement="bottom" title="Log out"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class=" d-flex justify-content-center">
+        <form class="form-card" action="">
+
+            <h2 class="mt-2 text-center"><u>PERFORMANCE APPRAISAL 2021-22</u></h2>
+            <!-- Teaching, Learning, and Evaluation Section -->
+            <section id="teaching-section" class="pt-5">
+                <h4 class="mb-4 text-center">CATEGORY I: Teaching, Learning, and Evaluation</h4>
+                <div class="container d-flex justify-content-center">
+                    <!-- Form for Teaching Section -->
+                    <div class="form-fill">
+                        <div class="mb-3">
+                            <label for="direct-teaching" class="form-label"><b>(A) Direct
+                                    Teaching:</b>
+                                <p>Under this head, in
+                                    appropriate cases and subject to the applicable regulations,
+                                    considerations may be
+                                    given
+                                    to other duly recognized academic work
+                                    Examination duties (question paper setting, Invigilation,
+                                    evaluation of answer
+                                    scripts,
+                                    internal assessment evaluation) as per allotment</p>
+                            </label>
+                            <input type="number" id="direct-teaching" placeholder="Maximum Score 70">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exam-duties" class="form-label"><b>(B) Examination
+                                    duties:</b>
+                                <p>(question paper
+                                    setting, Invigilation, evaluation of answer scripts,
+                                    internal assessment evaluation)
+                                    as
+                                    per allotment
+                                    Innovative Teaching – learning methodologies, updating of
+                                    subject contents/ courses,
+                                    mentoring etc.</p>
+                            </label>
+                            <input type="number" id="exam-duties" placeholder="Maximum Score 20">
+                        </div>
+                        <div class="mb-3">
+                            <label for="innovative-teaching" class="form-label"><b>(C)
+                                    Innovative Teaching:</b>
+                                <p>learning
+                                    methodologies, updating of subject contents/ courses,
+                                    mentoring etc.</p>
+
+                            </label>
+                            <input type="number" class="form-label" id="innovative-teaching"
+                                placeholder="Maximum Score 10">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- Professional Development, Co-curricular, and Extension Activities Section -->
+            <section id="development-section" class="pt-5">
+                <h4 class="mb-4 text-center">CATEGORY II: Professional Development,
+                    Co-curricular, and Extension
+                    Activities</h4>
+                <div class="container d-flex justify-content-center">
+                    <!-- Form for Professional Development Section -->
+                    <div class="form-fill">
+                        <div class="mb-3">
+                            <label for="co-curricular-activities" class="form-label"><b>(A)
+                                    Co-curricular
+                                    Activities:</b>
+                                <p>career counselling, study visit, Cultural, Sports, NSS, NCC,
+                                    public/popular
+                                    lectures/seminars/workshops/conference/etc.</p>
+                            </label>
+                            <input type="number" id="co-curricular-activities" placeholder="Maximum API Score 15">
+                        </div>
+                        <div class="mb-3">
+                            <label for="admin-contributions" class="form-label"><b>(B) Corporate
+                                    Contributions: </b>
+                                <p>(including as Dean/Principal/Vice Principal/ Bursar/
+                                    Chairperson/ Convener/
+                                    Teacher-in-charge/ similar other duties that require regular
+                                    office hours for its
+                                    discharge). Participation in Board of Studies, Academic and
+                                    Administrative
+                                    Committees.
+                                    Professional Development activities (such as participation
+                                    in seminars, conferences,
+                                    short term training courses, industrial experience, talks,
+                                    lectures in
+                                    Orientation/Refresher/ Faculty development courses,
+                                    dissemination and general
+                                    articles and any other contribution).</p>
+                            </label>
+                            <input type="number" id="admin-contributions" placeholder="Maximum API Score 15">
+                        </div>
+                        <div class="mb-3">
+                            <label for="prof-dev-activities" class="form-label"><b>(C)
+                                    Professional Development
+                                    Activities:</b>
+                                <p>(such as participation in seminars, conferences, short term
+                                    training courses,
+                                    industrial experience, talks, lectures in
+                                    Orientation/Refresher/ Faculty development
+                                    courses, dissemination and general articles and any other
+                                    contribution).</p>
+                            </label>
+                            <input type="number" id="prof-dev-activities" placeholder="Maximum API Score 15">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- Research and Academic Contributions Section -->
+            <section id="research-section" class="pt-5">
+                <h4 class="mb-4 text-center">CATEGORY III: Research and Academic Contributions
+                </h4>
+                <div class="container d-flex justify-content-center">
+
+                    <div class="form-fill">
+                        <!-- (A) Research Papers Published: -->
+                        <div class="mb-3 row">
+                            <b>(A) Research Papers Published:</b><br><br>
+                            <div class="col-md-6 mb-3">
+                                <label for="research-papers" class="form-label">
+                                    <p>Refereed Journals as notified by the UGC#</p>
+                                </label>
+                                <input type="number" id="research-papers" placeholder="25 per Publications">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="research-papers2" class="form-label">
+                                    <p>Other Reputed Journals as notified by the UGC#</p>
+                                </label>
+                                <input type="number" id="research-papers2" placeholder="10 per Publications">
+                            </div>
+                        </div>
+                        <!-- (B) Publications (Books, Chapters): -->
+                        <div class="mb-3 row">
+                            <b>(B) Publications (Books, Chapters):</b><br><br>
+                            <div class="col-md-12 mb-3">
+                                <label for="publications" class="form-label">
+                                    <p>Text/Reference Books, published by International
+                                        Publishers**, with ISBN/ ISSN
+                                        number as approved by the University and posted on its
+                                        website. For the above
+                                        purpose: only books with
+                                        ISBN/ISSN no. will be considered.
+                                    </p>
+                                </label>
+                                <input type="number" id="publications" placeholder="30 per Books, 15 per Edited">
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="publications2" class="form-label">
+                                    <p>Subject Books, published by National level publishers**,
+                                        with ISBN/ISSN number or
+                                        State/Central Govt. Publications as approved by the
+                                        University and posted on its
+                                        website. For the above purpose: only books with
+                                        ISBN/ISSN no. will be
+                                        considered.
+                                    </p>
+                                </label>
+                                <input type="number" id="publications2" placeholder="20 per Books, 10 per Edited">
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="publications3" class="form-label">
+                                    <p>Subject Books, published by Other local publishers**,
+                                        with ISBN/ISSN number as
+                                        approved by the University and posted on its website.
+                                        For the above purpose:
+                                        only books with ISBN/ISSN no. will be considered.
+                                    </p>
+                                </label>
+                                <input type="number" id="publications3" placeholder="15 per Books, 5 per Edited">
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="publications4" class="form-label">
+                                    <p>Chapters in Books, published by National and
+                                        International level publishers**,
+                                        with ISBN/ISSN number as approved by the University and
+                                        posted on its website.
+                                        For the above purpose: only books with ISBN/ISSN no.
+                                        will be considered.
+                                    </p>
+                                </label>
+                                <input type="number" id="publications4" placeholder="International –10 per Chapter National – 5 per Chapter
+        ">
+                            </div>
+                        </div>
+                        <!-- (C) Research Project: -->
+                        <div class="mb-3 row">
+                            <b>(C) Research Project:</b><br><br>
+                            <b>(C)(i) Sponsored Projects:</b><br><br>
+                            <div class="col-md-4 mb-3">
+                                <label for="research-projects" class="form-label">
+                                    <p>(a) Major Projects with grants above Rs. 5 lakhs</p>
+                                </label>
+                                <input type="number" id="research-projects" placeholder="20 for PI and 10 for Co-PI">
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="research-projects2" class="form-label">
+                                    <p>(b) Major Projects with grants above Rs. 3 lakhs</p>
+                                </label>
+                                <input type="number" id="research-projects2" placeholder="15 for PI and 8 for Co-PI">
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="research-projects3" class="form-label">
+                                    <p>(c) Minor Projects with grants above Rs. 1 lakh</p>
+                                </label>
+                                <input type="number" id="research-projects3" placeholder="10 for PI and 5 for Co-PI">
+                            </div>
+                            <b>(C)(ii) Consultancy Projects:</b><br><br>
+                            <div class="col-md-12 mb-3">
+                                <label for="research-projects4" class="form-label">
+                                    <p>Amount mobilized with a minimum of Rs. 2 lakhs</p>
+                                </label>
+                                <input type="number" id="research-projects4" placeholder="10 for every Rs. 2 lakhs">
+                            </div>
+                            <b>(C)(iii) Projects Outcome/ Outputs:</b><br><br>
+                            <div class="col-md-12 mb-3">
+                                <label for="research-projects5" class="form-label">
+                                    <p>1. Major Policy document prepared for international
+                                        bodies like WHO/ UNO /
+                                        UNESCO/ UNICEF etc. Central/ State Govt./ Local
+                                        Bodies<br>
+                                        2. Patent/Technology transfer/Product/Process</p>
+                                </label>
+                                <input type="number" id="research-projects5"
+                                    placeholder="30 for each International/ 20 for each National.">
+                            </div>
+                        </div>
+                        <!-- (D) research guidance: -->
+                        <div class="mb-3 row">
+                            <b>(D) research guidance:</b><br><br>
+                            <div class="col-md-6 mb-3">
+                                <b>(D)(i) M. Phil:</b>
+                                <label for="research-guidance" class="form-label">
+                                    <p>Degree awarded</p>
+                                </label>
+                                <input type="number" id="research-guidance"
+                                    placeholder="5 per candidate and 3 for Joint Supervisor">
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <b>(D)(ii) Ph. D:</b>
+                                <label for="research-guidance2" class="form-label">
+                                    <p>Degree awarded</p>
+                                </label>
+                                <input type="number" id="research-guidance2"
+                                    placeholder="15/10 per candidate and 8/5 for Joint Supervisor">
+                            </div>
+                        </div>
+                        <!-- (E)(i) Fellowships/ Awards: -->
+                        <div class="mb-3 row">
+                            <b>(E)(i) Fellowships/ Awards:</b><br><br>
+                            <div class="col-md-12 mb-3">
+                                <label for="Fellowships-Awards" class="form-label">
+                                    <p>International Award/Fellowship from academic bodies/
+                                        associations</p>
+                                </label>
+                                <input type="number" id="Fellowships-Awards"
+                                    placeholder="15 per Award 15 per Fellowship">
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="Fellowships-Awards2" class="form-label">
+                                    <p>National Award/Fellowship from academic bodies/
+                                        associations</p>
+                                </label>
+                                <input type="number" id="Fellowships-Awards2"
+                                    placeholder="10 per Award 10 per Fellowship">
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="Fellowships-Awards3" class="form-label">
+                                    <p>State/University level Award from academic bodies/
+                                        associations</p>
+                                </label>
+                                <input type="number" id="Fellowships-Awards3" placeholder="5 per Award">
+                            </div>
+
+                            <b>(E)(ii) Invited lecture/ papers presented:</b><br><br>
+                            <div class="col-md-4 mb-3">
+                                <label for="Invited-lecture" class="form-label">
+                                    <p>International</p>
+                                </label>
+                                <input type="number" id="Invited-lecture" placeholder="7 per lecture / 5 per paper">
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="Invited-lecture2" class="form-label">
+                                    <p>National Level</p>
+                                </label>
+                                <input type="number" id="Invited-lecture2" placeholder="5 per lecture / 3 per paper">
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="Invited-lecture3" class="form-label">
+                                    <p>State/University level</p>
+                                </label>
+                                <input type="number" id="Invited-lecture3" placeholder="3 per lecture / 2 per paper">
+                            </div>
+                        </div>
+                        <!-- (F) Development of e-learning delivery process/material: -->
+                        <div class="mb-3 row">
+                            <b>(F) Development of e-learning delivery process/material:</b>
+                            <div class="col-md-12 mb-3">
+                                <label for="e-learning" class="form-label">
+                                </label>
+                                <input type="number" id="e-learning" placeholder="10 per module">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="col-sm-12 pb-4" style="display: flex; justify-content: center;">
+                <div class="form-group">
+                    <!-- Submit Button -->
+                    <button type="button" onclick="submitAppraisal()">Submit Appraisal</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        if (window.innerWidth > 768) {
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+        }
+
+        function submitAppraisal() {
+            alert('Appraisal submitted successfully!');
+        }
+    </script>
+</body>
+
+</html>
